@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: black;
+    color: white;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    background-color: #ffffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#page1{
+    padding: 0 2vw;
+    min-height: 100vh;
+    width: 100vw;
+    line-height: 13vw;
+    padding-top: 20vh;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+#page1 h1{
+    line-height: 13vw;
+    font-size: 15vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -8px;
+}
+#video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#video-container video {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0 0vw;
+}
+#play {
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    padding: vw;
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+}
+
+#page2{
+    height: 100vh;
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+    gap: 2vw;
+    margin-top: 2vh
+}
+.elem{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1vw;
+}
+.elem img{
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
