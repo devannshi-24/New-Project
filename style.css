@@ -33,6 +33,14 @@ body{
 
 
 }
+#nav-part1{
+    /* background-color: blueviolet; */
+    height: 82px;
+    overflow: hidden;
+}
+#nav-part1 svg{
+    display: block;
+}
 #nav #navpart2{
     display: flex;
     align-items: center;
@@ -41,6 +49,7 @@ body{
 }
 #navpart2 #links a{
     text-decoration: none;
+    color: black;
     columns: #333;
     font-weight: 400;
     font-size: 14px;
@@ -140,6 +149,7 @@ body{
     height: auto;
     width: auto;
     object-fit: contain;
+    box-shadow: #333 0px 0px 20px;
 }
 .elem .dets{
     height: 60px ;
@@ -235,6 +245,86 @@ body{
     overflow: hidden;
     padding: 1vw;
     margin-bottom: 3vw;
+}
+#page3{
+   min-height: 120vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.child{
+    height: 54vh;
+    width: 88vw;
+    /* background-color: violet; */
+    position: relative;
+    padding: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.child img{
+    height: 100%;
+}
+#nav{
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+}
+#nav-part1{
+    /* background-color: blueviolet; */
+    height: 80px;
+    overflow: hidden;
+}
+#nav-part1 svg{
+    display: block;
+    height: 65 px;
+    height: 80px;
+}
+#nav #twogoodlogo{
+    height: 40 px;
+    margin-left: 1px;
+}
+#nav #navpart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+#navpart2 #links a{
+    text-decoration: none;
+    color: black;
+    columns: #333;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 20px;
+}
+#navpart2 #icons i{
+    font-size: 18px;
+    margin:0 20px;
+    font-weight: 100;
+}
+#links{
+    padding: 10px;
+    display: none;
+}
+#icons{
+    padding: 7px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
 }
 
 }
